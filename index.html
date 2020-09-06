@@ -4,14 +4,23 @@
 
 <head>
     <meta charset="UTF-8">
-	<title>월간 다비치</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0, user-scalable=no, target-densitydpi=medium-dpi" /><!--모바일페이지크기조절메타태그-->
+    <title>월간 다비치</title>
 	
 	<style>
-       h1, h2, h3 {text-align:center;}
+        h1, h2, h3 {text-align:center;}
 	   
-	   hr {text-align:center; border-bottom:0px; }
+	    hr {text-align:center; border-bottom:0px; width:1100px; height:auto; 
+		    display:block}
 	   
-	   img {
+       .top-title { 
+	          width:1200px;
+	          font-size:3em; font-weight:bold; 
+	          text-align: center;
+              display: block;
+			  margin:30px auto; }	 			  
+	   
+	    img {
            display: block;
 		   max-width: 100%;
 		   max-height:80px;
@@ -19,42 +28,55 @@
            height: auto;
 		   filter: brightness(115%);
            }
-       
-	   
-	   .first-wrapper, .second-wrapper, .third-wrapper, .davichi-wrapper {
+
+	       #top {
+              display: flex; width:1100px; height:auto; margin: 0 auto;
+	           }
+	           #top-left { 
+	             flex: 1; margin:0px 0px 0px 30px;
+	           }
+	           #top-center {
+	             flex: 1;
+	             text-align: center;
+	           }
+	           #top-right {
+	             flex: 1;
+	             text-align: right; margin:0px 30px 0px 0px;
+	           } 
+	
+      	   
+	   .first-wrapper, .second-wrapper, .third-wrapper{
 	          text-align: center;
 	          margin:0 auto; }
 			  
-	   .first, .second, .third {
+		.davichi-wrapper {	 
+              text-align: center;
+	          margin:50px auto 0; }		
+			  
+	   .first {
               font-size:16px;
               text-align: center;
               display: inline-block;
-              margin:20px; }
+              margin:20px 15px 30px 0px; }
+			  
+	   .second {
+              font-size:16px;
+              text-align: center;
+              display: inline-block;
+              margin:20px 20px 30px 0px; }    
+	   
+	   .third {
+              font-size:16px;
+              text-align: center;
+              display: inline-block;
+              margin:20px 40px 30px 0px; }	  
+			  
        .davichi {
 	          text-align: center;
               display: inline-block; }  
 	
-       .top-title { 
-	          font-size:3em; font-weight:bold; 
-	          text-align: center;
-              display: inline-block;
-			  margin:15px 0px; }
-   
-    #top {
-      display: flex;
-    }
-    #top-left { 
-      flex: 1; margin:0px 0px 0px 30px;
-    }
-    #top-center {
-      flex: 1;
-      text-align: center;
-    }
-    #top-right {
-      flex: 1;
-      text-align: right; margin:0px 30px 0px 0px;
-    } 
-	
+
+       
 
    
     </style>
@@ -73,13 +95,17 @@
     
 	<div class="top-title">월간 다비치</div>
 	  
-	<hr class="one"> 
+
+ 		<hr class="one" style="margin:10px auto;">    
     <div id="top">	  
 	    <div id="top-left">2020-08</div>
 	    <div id="top-center">MONTHLY DAVICHI</div>
 	    <div id="top-right">edit by 핼을 품은 밍키</div>
 	</div>
-	<hr class="one" style="margin-bottom:50px;">
+
+	
+	    <hr class="one" style="margin:10px auto;">
+	
     <div class="davichi-wrapper">
 	    <div>
 	      <div class="davichi"><img src="./img/200803_haelstar.jpg"></div>
@@ -142,15 +168,9 @@
 		  <div class="davichi"><img src="./img/200831_mingstar3.jpg"></div>
 		  <div class="davichi"><img src="./img/200831_mingstar4.jpg"></div>
 		</div>
-		<div>		  	  
-		  
-		
-		</div>
 	</div>
 	      
-
-	
-	
+	<br>
 	
 	      <h1>너의 8월과 우리의 8월이 만나</h1>
 	 
@@ -166,36 +186,32 @@
 	 
 	
 
-	    <iframe src="monthly_mingki_bd.html" name="first_iframe" id="the_iframe" frameborder="0" scrolling="no" style="overflow-x:hidden; overflow:auto; width:100%; min-height:500px;">
+	    <iframe src="monthly_mingki_bd.html" name="first_iframe" id="the_iframe" onload="calcHeight();" frameborder="0" scrolling="no" style="overflow-x:hidden; overflow:auto; width:100%; min-height:500px;">
 		</iframe>
 	
 	
 
-	<hr class="one" style="margin-bottom:50px;">   
+	<hr class="one" style="margin:50px auto;">    
 	    <h1>이해리, 사랑의 콜센터에 출연! 오랜만의 TV 출연에 팬들 오열</h1>
 	 
 	
 	<div class="second-wrapper">   
 	      <div class="second"><a href="monthly_mingki_bd.html" target="second_iframe">#출연기사</a></div>
 	      <div class="second"><a href="monthly_mingki_bd.html" target="second_iframe">#핼스타</a></div>
-	      <div class="second"><a href="monthly_mingki_bd.html" target="second_iframe">#음원을_왜_안줘</a></div>
+	      <div class="second"><a href="fixing_my_wakeup_Leehari.html" target="second_iframe">#음원을_왜_안줘</a></div>
 	      <div class="second"><a href="monthly_mingki_bd.html" target="second_iframe">#밍키언니지만_사랑받는_발라더모임막내</a></div>
 	      <div class="second"><a href="monthly_mingki_bd.html" target="second_iframe">#팬들오열</a></div>
+		  
 	</div>   
 	 
 	
     <div class="iframe">
-	    <iframe src="monthly_mingki_bd.html" name="second_iframe" id="the_iframe" frameborder="0" scrolling="no" style="overflow-x:hidden; overflow:auto; width:100%; min-height:500px;">
+	    <iframe src="monthly_mingki_bd.html" name="second_iframe" id="the_iframe" onload="calcHeight();" frameborder="0" scrolling="no" style="overflow-x:hidden; overflow:auto; width:100%; min-height:500px;">
 	    </iframe>
 	</div>
-	
-	  <p>#화장을 고치고 - 이해리</p>
-	  
-	    <iframe src="fixing_my_wakeup_Leehari.mp4" id="the_iframe" frameborder="0" scrolling="no" style="overflow-x:hidden; overflow:auto; width:480px; height:360px;">
-	    </iframe>
     
 
-	<hr class="one" style="margin-top:50px; margin-bottom:50px;">     
+	<hr class="one" style="margin:50px auto;">     
 	    <h1>다비치와 다코 소식</h1>
 	 
 	
@@ -209,12 +225,9 @@
     
 	
 	<div class="iframe">
-	    <iframe src="monthly_mingki_bd.html" name="third_iframe" id="the_iframe" frameborder="0" scrolling="no" style="overflow-x:hidden; overflow:auto; width:100%; min-height:500px;">
+	    <iframe src="monthly_mingki_bd.html" name="third_iframe" id="the_iframe" frameborder="none" scrolling="no"  width=0 scrolling=no height=0 style="overflow-x:hidden; overflow:auto; width:100%; min-height:500px;">
 	    </iframe>
 	</div>
-	
-
-	
 
 
 </body>
