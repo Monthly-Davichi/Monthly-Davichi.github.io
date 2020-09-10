@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+
+  <style>
+  body {
+  font-family: Tahoma;
+}
+header {
+  text-align: center;
+}
+#calendar {
+  width: 70%;    
+  height: auto; 
+  margin: 0 auto;
+}
+#calendar a {
+  color: #8e352e;
+  text-decoration: none;
+}
+#calendar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+#calendar li {
+  display: block;
+  float: left;
+  width: 14.342%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin-right: -1px;
+  margin-bottom: -1px;
+}
+#calendar ul.weekdays {
+  height: 40px;
+  background: #fff;
+}
+#calendar ul.weekdays li {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 20px;
+  border: none !important;
+  padding: 10px 6px;
+  color: #111;
+  font-size: 13px;
+}
+#calendar .days li {
+  height: 110px;
+}
+#calendar .days li:hover {
+  background: #F0FFF0;
+}
+#calendar .date {
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 0px;
+  font-size: 12px;
+  background: #fff;
+  color: #111;
+  width: 20px;
+  border-radius: 70%;
+  float: right;
+}
+#calendar .event {
+  clear: both;
+  display: block;
+  font-size: 12px;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+#calendar .event-desc {
+  color: #111;
+  margin: 3px 0 7px 0;
+  text-decoration: none;
+}
+#calendar .other-month {
+  color: #111;
+}
+/* ============================
+                Mobile Responsiveness
+   ============================*/
+@media (max-width: 768px) {
+  #calendar .weekdays, #calendar .other-month {
+    display: none;
+  }
+  #calendar li {
+    height: auto !important;
+    border: 1px solid #ededed;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: -1px;
+  }
+  #calendar .date {
+    float: none;
+  }
+}
+  
+
+  
+  .logo{width:20px;
+         height:auto;
+		 }
+  .insta{width:20px;
+         height:auto;
+		 }
+  .youtube{width:20px;
+         height:auto;
+		 }
+</style>
+ </head>
+ <body>
+ 
+
+
+
+
+
+
+
+
+
+
+  <div id="calendar-wrap">
+            <header>
+                <h1>August 2020</h1>
+            </header>
+            <div id="calendar">
+                <ul class="weekdays">
+                    <li style="color: red;">Sunday</li>
+                    <li>Monday</li>
+                    <li>Tuesday</li>
+                    <li>Wednesday</li>
+                    <li>Thursday</li>
+                    <li>Friday</li>
+                    <li style="color: blue;">Saturday</li>
+                </ul>
+                <!-- Days from previous month -->
+                <ul class="days">
+                    <li class="day other-month">
+                        <div class="date" style="color: red;"></div> 
+                            <div class="event">
+							
+							<div class="event-desc">
+                            <img class="insta" src="./img/icon_news.png" style="vertical-align:middle;">
+							<span>[핼] 17일 사콜기사</span>
+                            </div>
+							
+							<div class="event-desc">
+                            <img class="insta" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							<span>[핼] 21일 사콜전화</span>
+                            </div>
+							
+						    <div class="event-desc">
+                            <img class="logo" src="./img/icon_tv.jpg" style="vertical-align:middle;">
+							<span style="font-weight:bold; background: yellow;">[핼]23일 사콜예고편</span>
+                            </div>								
+
+                           </div>  								
+                    </li>
+                    <li class="day other-month">
+                        <div class="date">27</div>                                         
+                    </li>
+                    <li class="day other-month">
+                        <div class="date">28</div>                     
+                    </li>
+                    <li class="day other-month">
+                        <div class="date">29</div>                     
+                    </li>
+                    <li class="day other-month">
+                        <div class="date">30</div>
+                            <div class="event">
+						       <div class="event-desc">
+                               <img class="logo" src="./img/icon_tv.jpg" style="vertical-align:middle;">
+							   <span style="font-weight:bold; background: yellow;">[핼]사랑의 콜센타</span>
+                               </div>								
+                            <div class="event-desc">
+                               <img class="insta" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>핼</span>
+                            </div>
+                           </div>  						
+                    </li>
+                    <!-- Days in current month -->
+                    <li class="day">
+                        <div class="date">31</div>     
+                        <div class="event">
+                            <div class="event-desc">
+                               <img class="logo" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>흊</span>
+                            </div>	
+                        </div>						
+                    </li>
+                    <li class="day">
+                        <div class="date" style="color: blue;">1</div>                                      
+                    </li>
+                </ul>
+                    <!-- Row #2 -->
+                <ul class="days">
+                    <li class="day">
+                        <div class="date" style="color: red;">2</div>
+						<div class="event">
+                            <div class="event-desc">
+                               <img class="logo" src="./img/logo_instagram.png" style="vertical-align:middle;" >
+							   <span>밍</span>
+							</div>
+							<div class="event-desc">
+							   <img class="logo" src="./img/logo_twitter.png" style="vertical-align:middle;">
+							   <span>밍 Live</span>
+                            </div>	
+                        </div>							
+                    </li>
+                    <li class="day" style="background-image:url(./img/flag.jpg); background-size:100%; background-repeat:no-repeat;">
+                        <div class="date">3</div>    
+                        <div class="event">
+
+							<div class="event-desc">
+                               <img class="logo" src="./img/icon_cake.png" style="vertical-align:bottom; margin:15px auto 0;">
+							   <span style="font-weight:bold; font-size:15px; background: yellow;">강민경</span>
+                            </div>
+                            <div class="event-desc">
+                               <img class="logo" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>핼 밍</span>
+                            </div>								
+							
+                        </div>						
+                    </li>
+                    <li class="day">
+                        <div class="date">4</div>   
+                        <div class="event">
+                            <div class="event-desc">
+                               <img class="logo" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>핼(밍 댓글)</span>
+							</div>	
+                        </div>								
+                    </li>
+                    <li class="day">
+                        <div class="date">5</div>  
+                        <div class="event">
+                            <div class="event-desc">
+                               <img class="logo" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>핼/핼스토리</span>			
+                            </div>	
+                        </div>							
+                    </li>
+                    <li class="day">
+                        <div class="date">6</div>
+                        <div class="event">
+						       <div class="event-desc">
+                               <img class="logo" src="./img/icon_tv.jpg" style="vertical-align:middle;">
+							   <span style="font-weight:bold; background: yellow;">[핼]사랑의 콜센타</span>
+                               </div>	
+						       <div class="event-desc">
+                               <img class="insta" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>핼 밍 흊</span>
+                               </div>	
+                        </div>                     
+                    </li>
+                    <li class="day">
+                        <div class="date">7</div>  
+                        <div class="event">
+                            <div class="event-desc">
+                               <img class="logo" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>핼 밍</span>
+							</div>
+							<div class="event-desc">
+							   <img class="logo" src="./img/logo_twitter.png" style="vertical-align:middle;">
+							   <span>밍</span>
+                            </div>	
+                        </div>							
+                    </li>
+                    <li class="day">
+                        <div class="date" style="color: blue;">8</div>                      
+                    </li>
+                </ul>
+                    <!-- Row #3 -->
+                <ul class="days">
+                    <li class="day">
+                        <div class="date" style="color: red;">9</div>    
+                        <div class="event">
+                            <div class="event-desc">
+                               <img class="logo" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>밍 흊</span>
+                            </div>	
+                        </div>								
+                    </li>
+                    <li class="day">
+                        <div class="date">10</div>                     
+                    </li>
+                    <li class="day">
+                        <div class="date">11</div> 
+                        <div class="event">
+                            <div class="event-desc">
+                               <img class="logo" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>Aviemuah</span>
+                            </div>	
+                        </div>						
+                    </li>
+                    <li class="day">
+                        <div class="date">12</div>                     
+                    </li>
+                    <li class="day">
+                        <div class="date">13</div>
+						<div class="event">
+                            <div class="event-desc">
+                               <img class="logo" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>밍 Aviemuah</span>
+                            </div>	
+                        </div>	
+                    </li>
+                    <li class="day">
+                        <div class="date">14</div>                     
+                    </li>
+                    <li class="day">
+                        <div class="date" style="color: blue;">15</div>                     
+                    </li>
+                </ul>
+                    <!-- Row #4 -->
+                <ul class="days">
+                    <li class="day">
+                        <div class="date" style="color: red;">16</div>     
+                        <div class="event">
+                            <div class="event-desc">
+							   <img class="logo" src="./img/logo_twitter.png" style="vertical-align:middle;">
+							   <span>밍</span>
+                            </div>	
+                        </div>								
+                    </li>
+                    <li class="day">
+                        <div class="date">17</div>   
+                        <div class="event">
+                            <div class="event-desc">
+                               <img class="logo" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>핼 밍 흊</span>
+                            </div>	
+                        </div>								
+                    </li>
+                    <li class="day">
+                        <div class="date">18</div> 
+                        <div class="event">
+                            <div class="event-desc">
+                               <img class="logo" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>핼스토리</span>
+                            </div>							
+                    </li>
+                    <li class="day">
+                        <div class="date">19</div>   
+                        <div class="event">
+                            <div class="event-desc">
+                               <img class="logo" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>밍 Aviemuah</span>
+                            </div>	
+                        </div>							
+                    </li>
+                    <li class="day">
+					<div class="date">20</div> 
+                        <div class="event">
+                            <div class="event-desc">
+                               <img class="logo" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>밍/밍스토리</span>
+                            </div>	
+                        </div>					
+                    </li>
+                    <li class="day">
+                        <div class="date">21</div> 
+                        <div class="event">
+                            <div class="event-desc">
+                               <img class="logo" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>흊</span>
+                            </div>	
+                        </div>							
+                    </li>
+                    <li class="day">
+                        <div class="date" style="color: blue;">22</div>                     
+                    </li>
+                </ul>
+                        <!-- Row #5 -->
+                <ul class="days">
+                    <li class="day">
+                        <div class="date" style="color: red;">23</div>   
+                        <div class="event">
+                            <div class="event-desc">
+                               <img class="logo" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>Aviemuah</span>
+                            </div>	
+                        </div>							
+                    </li>
+                    <li class="day">
+                        <div class="date">24</div>                   
+                    </li>
+                    <li class="day">
+                        <div class="date">25</div> 
+                            <div class="event">
+							<div class="event-desc">
+                            <img class="insta" src="./img/icon_news.png" style="vertical-align:middle;">
+							<span>[핼]싱어게인 기사</span>
+                            </div>	
+                            </div>	
+                        <div class="event">
+                            <div class="event-desc">
+                               <img class="logo" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>Aviemuah</span>
+                            </div>	
+                        </div>								
+                    </li>
+                    <li class="day">
+                        <div class="date">26</div>  
+                        <div class="event">
+                            <div class="event-desc">
+                               <img class="logo" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>Aviemuah</span>
+                            </div>	
+                        </div>							
+                    </li>
+                    <li class="day">
+                        <div class="date">27</div>                     
+                    </li>
+                    <li class="day">
+                        <div class="date">28</div>   
+                        <div class="event">
+                            <div class="event-desc">
+                               <img class="logo" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>밍</span>
+                            </div>	
+                        </div>							
+                    </li>
+                    <li class="day">
+                        <div class="date" style="color: blue;">29</div>   
+                        <div class="event">
+                            <div class="event-desc">
+							   <img class="logo" src="./img/logo_twitter.png" style="vertical-align:middle;">
+							   <span>밍 live</span>
+                            </div>	
+							                        
+                            <div class="event-desc">
+                               <img class="logo" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>Aviemuah</span>
+                            </div>	
+	
+                        </div>							
+                    </li>
+                </ul>
+                <!-- Row #6 -->
+                <ul class="days">
+                    <li class="day">
+                        <div class="date" style="color: red;">30</div>                     
+                    </li>
+                    <li class="day other-month">
+                        <div class="date">31</div> <!-- Next Month -->   
+                        <div class="event">
+                            <div class="event-desc">
+                               <img class="logo" src="./img/logo_instagram.png" style="vertical-align:middle;">
+							   <span>밍 흊</span>
+                            </div>	
+                        </div>							
+                    </li>
+                    <li class="day other-month">
+                        <div class="date">1</div>                      
+                    </li>
+                    <li class="day other-month">
+                        <div class="date">2</div>                      
+                    </li>
+                    <li class="day other-month">
+                        <div class="date">3</div>                      
+                    </li>
+                    <li class="day other-month">
+                        <div class="date">4</div>                      
+                    </li>
+                    <li class="day other-month">
+                        <div class="date" style="color: blue;">5</div>                      
+                    </li>
+                </ul>
+            </div><!-- /. calendar -->
+        </div><!-- /. wrap -->
+ </body>
+</html>
